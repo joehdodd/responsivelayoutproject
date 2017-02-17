@@ -1,0 +1,77 @@
+/* --
+===============
+ Overall Styles
+===============
+-- */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2, {
+    font-family: 'Lato', sans-serif;
+    color: #888;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+p,
+a,
+span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* --
+===============
+ Layout Styles
+===============
+-- */
+
+/* Nav */
+
+.name {
+    text-align: center;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.container {
+    width: 90%;
+}
+
+/* --
+===============
+ Text Styles
+===============
+-- */
+
+.name {
+    font-weight: 900;
+}
+
+.main-nav li {
+    background-color: #fff;
+}
