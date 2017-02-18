@@ -1,8 +1,8 @@
-/* --
-===============
- Overall Styles
-===============
--- */
+/* ----
+==========================
+      Overall Styles
+==========================
+---- */
 
 * {
     box-sizing: border-box;
@@ -10,13 +10,9 @@
 
 h1,
 h2,
-h3, {
+h3 {
     font-family: 'Lato', sans-serif;
     color: #999;
-}
-
-body {
-    background-color: #F8F8F8;
 }
 
 p,
@@ -35,15 +31,20 @@ ul {
     padding-left: 0px;
 }
 
+body {
+    background-color: #F8F8F8;
+}
+
+
 img {
     max-width: 100%;
 }
 
-/* --
-===============
- Layout Styles
-===============
--- */
+/* ----
+==========================
+      Layout Styles
+==========================
+---- */
 
 .main-header {
     margin-bottom: 20px;
@@ -62,16 +63,12 @@ img {
 .main-nav li {
     background-color: #fff;
     font-weight: 900;
-    margin: 10px 15px;
+    margin: 10px;
     text-transform: uppercase;
 }
 
 .banner {
     text-align: center;
-}
-
-.profile-img {
-    max-width: 60%;
 }
 
 .banner-tagline,
@@ -81,10 +78,8 @@ img {
     color: #989898;
 }
 
-#portfolio {
-    text-align: center;
-    background-color: #fff;
-    padding-bottom: 50px;
+.profile-img {
+    max-width: 70%;
 }
 
 .section-heading {
@@ -96,6 +91,12 @@ img {
     color: #787878;
 }
 
+.portfolio {
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
 .portfolio-heading {
     font-weight: normal;
     padding-top: 10px;
@@ -103,11 +104,12 @@ img {
 
 .portfolio-description {
     line-height: 1.5em;
-    padding: 10px;
+    padding: 10px 10px 20px;
     color: #808080;
 }
 
 .main-contact {
+    text-align: center;
     padding: 1em;
 }
 
@@ -124,7 +126,7 @@ img {
 .footer {
     padding-right: 1em;
     padding-left: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-name {
@@ -143,19 +145,25 @@ img {
 }
 
 
-.main-contact {
-    text-align: center;
-}
+/* ----
+==========================
+      Layout Containers
+==========================
+---- */
+
 
 .col {
-    padding: 1em 1em;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-/* --
-===============
- Float Clerfix
-===============
--- */
+
+/* ----
+==========================
+     Float Clearfix
+==========================
+---- */
+
 
 .clearfix::after {
     content: " ";
@@ -163,13 +171,21 @@ img {
     clear: both;
 }
 
-/* --
-===============
- Media Queries
-===============
--- */
+
+/* ----
+==========================
+     Media Queries
+==========================
+---- */
+
 
 @media screen and (min-width: 768px) {
+
+    .container {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0 auto;
+    }
 
     .main-nav li {
         display: inline-block;
@@ -180,10 +196,12 @@ img {
         text-align: center;
     }
 
-    .banner,
-    .col {
-        padding-left: 2em;
-        padding-right: 2em;
+    .name {
+        padding-top: 10px;
+    }
+
+    .banner {
+        margin-bottom: 50px;
     }
 
     .profile-img {
@@ -192,14 +210,15 @@ img {
     }
 
     .banner-tagline {
-        vertical-align: top;
-        text-align: left;
-        padding-right: 1em;
-        padding-top: 0;
-        margin-top: -2px;
         float: left;
         width: 60%;
-    }
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 0 16px 0 0;
+        margin-top: -2px;
+        }
+
 
     .col {
         float: left;
@@ -207,7 +226,7 @@ img {
     }
 
     .contact-tagline {
-        padding: 0 125px 20px;
+        padding: 25px 125px;
     }
 
     .mobile-nav {
@@ -217,6 +236,8 @@ img {
     .footer-name,
     .footer-nav {
         margin-top: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .footer-nav {
@@ -231,12 +252,41 @@ img {
         padding-right: 1em;
     }
 
+    .footer {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
 
+    .container {
+        max-width: 1150px;
+    }
+
+    body {
+        padding-top: 200px;
+    }
+
+    .banner {
+        padding: 0 30px;
+    }
+
+    .portfolio {
+        margin: 0 30px;
+    }
+
     .col {
-        width: 33.333333%;
+        width: 33.333%;
+    }
+
+    .main-header {
+       position: fixed;
+       background: #fff;
+       box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+       width: 100%;
+       top: 0;
+       z-index: 1;
     }
 
     .name {
@@ -251,10 +301,6 @@ img {
 
     .main-nav a {
         float: left;
-    }
-
-    .banner-tagline {
-        padding-left: 0px;
     }
 
 }
