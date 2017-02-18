@@ -63,6 +63,7 @@ img {
     background-color: #fff;
     font-weight: 900;
     margin: 10px 15px;
+    text-transform: uppercase;
 }
 
 .banner {
@@ -73,7 +74,8 @@ img {
     max-width: 60%;
 }
 
-.tagline {
+.banner-tagline,
+.contact-tagline {
     line-height: 1.5em;
     padding: 15px;
     color: #989898;
@@ -105,7 +107,7 @@ img {
     color: #808080;
 }
 
-.contact {
+.main-contact {
     padding: 1em;
 }
 
@@ -141,7 +143,7 @@ img {
 }
 
 
-.contact {
+.main-contact {
     text-align: center;
 }
 
@@ -149,13 +151,111 @@ img {
     padding: 1em 1em;
 }
 
-/* ----
-Float clearfix
----- */
+/* --
+===============
+ Float Clerfix
+===============
+-- */
 
 .clearfix::after {
     content: " ";
     display: table;
     clear: both;
+}
+
+/* --
+===============
+ Media Queries
+===============
+-- */
+
+@media screen and (min-width: 768px) {
+
+    .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .banner,
+    .col {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .profile-img {
+        float: right;
+        width: 40%;
+    }
+
+    .banner-tagline {
+        vertical-align: top;
+        text-align: left;
+        padding-right: 1em;
+        padding-top: 0;
+        margin-top: -2px;
+        float: left;
+        width: 60%;
+    }
+
+    .col {
+        float: left;
+        width: 50%;
+    }
+
+    .contact-tagline {
+        padding: 0 125px 20px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .footer-name,
+    .footer-nav {
+        margin-top: 20px;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .footer-nav li {
+        float: left;
+        padding-right: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .col {
+        width: 33.333333%;
+    }
+
+    .name {
+        float: left;
+        padding-left: 32px;
+    }
+
+    .main-nav {
+        float: right;
+        padding-right: 0px;
+    }
+
+    .main-nav a {
+        float: left;
+    }
+
+    .banner-tagline {
+        padding-left: 0px;
+    }
+
 }
 
