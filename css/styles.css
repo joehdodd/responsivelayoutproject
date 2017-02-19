@@ -16,14 +16,14 @@ h3 {
 }
 
 p,
-a,
+li,
 span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #484848;
 }
 
 ul {
@@ -63,7 +63,7 @@ img {
 .main-nav li {
     background-color: #fff;
     font-weight: 900;
-    margin: 10px;
+    margin: 5px 15px;
     text-transform: uppercase;
 }
 
@@ -115,7 +115,6 @@ img {
 
 .contact-links li {
     padding-bottom: 15px;
-    color: #989898;
 }
 
 .contact-links li a {
@@ -153,8 +152,8 @@ img {
 
 
 .col {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 
