@@ -97,14 +97,10 @@ img {
     padding-bottom: 50px;
 }
 
-.portfolio-heading {
-    font-weight: normal;
-    padding-top: 10px;
-}
-
 .portfolio-description {
     line-height: 1.5em;
-    padding: 10px 10px 20px;
+    margin-top: 0px;
+    padding: 16px;
     color: #808080;
 }
 
@@ -152,8 +148,7 @@ img {
 
 
 .col {
-    padding-right: 1em;
-    padding-left: 1em;
+    padding: 1em;
 }
 
 
@@ -218,10 +213,10 @@ img {
         margin-top: -2px;
         }
 
-
     .col {
         float: left;
         width: 50%;
+        height: 400px;
     }
 
     .contact-tagline {
